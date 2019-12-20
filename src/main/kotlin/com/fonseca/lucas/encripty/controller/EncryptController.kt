@@ -16,6 +16,11 @@ class EncryptController {
 
     @PostMapping("/encrypt")
     fun getEncrypt(@RequestBody body: EncryptRequestDTO): Any {
-        return ResponseEntity.ok(encryptService.getEncryptByValueAndKey(body.value, body.key))
+        return ResponseEntity.ok(encryptService.encryptByValueAndKey(body.value, body.key))
+    }
+
+    @PostMapping("/decrypt")
+    fun decrypt(@RequestBody body: EncryptRequestDTO): Any {
+        return ResponseEntity.ok(encryptService.encryptByValueAndKey(body.value, body.key))
     }
 }
