@@ -35,7 +35,3 @@ compileTestKotlin {
 		jvmTarget = '1.8'
 	}
 }
-
-task wrappeer(type: Wrapper) {
-	gradleVersion = '1.6'
-}
