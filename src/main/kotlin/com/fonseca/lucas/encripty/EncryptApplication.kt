@@ -4,8 +4,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class EncriptyApplication
+class EncryptApplication
 
 fun main(args: Array<String>) {
-	runApplication<EncriptyApplication>(*args)
+	runApplication<EncryptApplication>(*args)
 }
